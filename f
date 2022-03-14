@@ -8,7 +8,7 @@
 function push_commit()
 {
     #commit changes
-    git commit -am 'wasteagram-app'
+    git commit -am 'go-hello-world'
     # push to github
     git push
 }
@@ -16,7 +16,7 @@ function push_commit()
 function commit()
 {
     # commt changes only
-    git commit -am 'wasteagram-app'
+    git commit -am 'go-hello-world'
 }
 
 # what to run
