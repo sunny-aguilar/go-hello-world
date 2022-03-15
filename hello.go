@@ -1,12 +1,47 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 import "rsc.io/quote"
 
 func main() {
-	fmt.Println("Hello, World!")
+	// variables
+	var i int = 42 // explicit variable
+	j := 42        // compiler inferred variable
+	fmt.Println(i)
+	fmt.Println(j)
 	fmt.Println(quote.Go())
+
+	var n bool = true
+	fmt.Printf("%v, %T", n, n)
+
+	now := time.Now()
+	fmt.Println(now)
+
+	var roomNumber, floorNumber int = 154, 3
+	fmt.Println(roomNumber, floorNumber)
+
+	var password = "notSecured"
+	fmt.Println(password)
+
+	// constants
+	const neverChange int = 100
+	fmt.Println(neverChange)
+
+	// control statements
+	if (1 < 2) {
+		fmt.Println("2 is greater than 1\n")
+	}
+
+	// for loops
+	var ctr int = 0
+	for ctr < 2 {
+		fmt.Printf("I is less than 2, %v\n", ctr)
+		ctr++
+	}
 }
 
 // go run . - runs a Go program
