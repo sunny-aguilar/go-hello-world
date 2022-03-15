@@ -32,8 +32,8 @@ func main() {
 	fmt.Println(neverChange)
 
 	// control statements
-	if (1 < 2) {
-		fmt.Println("2 is greater than 1\n")
+	if 1 < 2 {
+		fmt.Printf("2 is greater than 1\n")
 	}
 
 	// for loops
@@ -41,6 +41,10 @@ func main() {
 	for ctr < 2 {
 		fmt.Printf("I is less than 2, %v\n", ctr)
 		ctr++
+	}
+
+	for i:= 0; i < 3; i++ {
+		fmt.Printf("i=%v\n", i)
 	}
 }
 
