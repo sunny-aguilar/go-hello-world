@@ -43,11 +43,23 @@ func main() {
 		ctr++
 	}
 
-	for i:= 0; i < 3; i++ {
+	for i := 0; i < 3; i++ {
 		fmt.Printf("i=%v\n", i)
 	}
+
+	fmt.Println(computePrice(1, 2))
+	fmt.Printf("Name: %v", returnName("Sandro"))
 }
 
 // go run . - runs a Go program
 // go build . - creates executable that can be run later
 // ./GoExecutable - runs the Go executable
+
+func computePrice(a int, b int) int {
+	return a + b
+}
+
+func returnName (str string) (name string) {
+	name = str
+	return
+}
